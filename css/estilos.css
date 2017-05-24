@@ -1,0 +1,247 @@
+*{
+    transition: all .5s ease !important;
+}
+/* resetiando fuente */
+h1, h2, h3, h4, h5, h6, span, p, pre, a, li, ul, tr, td, input, select, option, textarea, label{
+    font-family: 'Dosis' !important;
+}
+
+.full-image{
+	width:100vw;
+	height:100vh;
+	position:fixed;
+	top:-100vh;
+	background:rgba(0, 0, 0, 0.5);
+	z-index:999999999;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+}
+.full-image-active{
+	top:0px !important;
+}
+/* Resetiendo estilos de manterialzecss */
+.wp-caption{
+	max-width: 100% !important;
+}
+
+strong{
+	font-weight: bold !important;
+}
+img{
+     max-width: 100% !important;
+}
+
+
+.big-title{
+	font-size: 6em !important;
+}
+.navbar-fixed{
+    position: fixed !important;
+}
+
+nav{
+    box-shadow: none  !important;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav .search{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+nav .search-box{
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    top: -100px;
+
+}
+
+nav .search-box input{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    background: white !important;
+    box-shadow: none !important;
+    font-size: 1.2em;
+    border: none !important;
+}
+nav .search-box .close{
+    height: 50px !important;
+    width: 30px !important;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+
+}
+
+.divider{
+    margin: 20px !important;
+    display:block;
+    border:none;
+    height:1px;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 450, from(#b7b7b7), to(#fff));
+}
+
+/* Estilos genereales */
+header{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+header .content{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: white;
+    text-shadow: 1px 2px 5px black;    
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h1{
+    font-size: 4em !important;
+}
+
+.raised-box{
+    padding-top: 60px;
+    padding-bottom: 10px;
+    width: 95%;
+    background-color:white;
+    margin-left:2.5%;
+    margin-top: -80px;
+    border-radius: 3px;
+    transition: all 2s ease;
+    overflow: hidden;
+}
+
+
+/* All post */
+
+#all-post img{
+    border-radius: 3px;
+}
+
+
+#all-post span p{
+    margin-bottom: 30px !important;
+}
+
+#all-post .readmore{
+    border-radius: 50px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* content-post */
+
+.content-post{
+    width: 100% !important;
+    text-align: justify;
+}
+
+.content-post p{
+    font-size: 1.3em !important;
+}
+.content-post img{
+
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3)
+}
+
+.tags a{
+    border-radius: 12px;
+    padding: 5px 12px;
+    text-transform: uppercase;
+    font-size: 10px;
+    background-color: #2196f3;   
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+    color: white;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width:370px){
+    .tags{
+        justify-content: center !important;
+    }
+}
+
+.author img{
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3)
+}
+.author{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+/* Estilos de wordpress */
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+
+
+
+.or-spacer {
+    width: 100%;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.or-spacer .mask {
+    overflow: hidden;
+    height: 20px;
+}
+.or-spacer .mask:after {
+    content: '';
+    display: block;
+    margin: -25px auto 0;
+    width: 100%;
+    height: 25px;
+    border-radius: 125px / 12px;
+    box-shadow: 0 0 8px #1e1e1e;
+}
+
+
+footer{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
